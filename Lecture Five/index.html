@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextVision - Digital Agency</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2563eb',
+            dark: '#1e293b',
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+
+  <header class="bg-white shadow fixed top-0 left-0 w-full z-50">
+    <div class="container mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-2xl font-bold text-primary">NextVision</h1>
+      <nav class="hidden md:flex space-x-6">
+        <a href="#home" class="hover:text-primary">Home</a>
+        <a href="#about" class="hover:text-primary">About</a>
+        <a href="#services" class="hover:text-primary">Services</a>
+        <a href="#testimonials" class="hover:text-primary">Testimonials</a>
+        <a href="#contact" class="hover:text-primary">Contact</a>
+      </nav>
+      <button class="bg-primary text-white px-4 py-2 rounded-lg md:hidden">Menu</button>
+    </div>
+  </header>
+
+  <section id="home" class="mt-50  h-screen pt-32 pb-20 bg-gradient-to-r from-blue-600 to-blue-400 text-white text-center">
+    <div class="container mx-auto px-6">
+      <h2 class="text-5xl font-extrabold mb-6">Grow Your Business With Us</h2>
+      <p class="max-w-2xl mx-auto mb-8 text-lg text-blue-100">
+        We help brands and startups reach their full potential through digital design and marketing solutions.
+      </p>
+      <button class="bg-white text-blue-600 px-8 py-3 font-semibold rounded-lg shadow hover:bg-blue-100 transition">
+        Get Started
+      </button>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 container mx-auto px-6 text-center">
+    <h3 class="text-3xl font-bold mb-6 text-primary">About Us</h3>
+    <p class="max-w-2xl mx-auto text-gray-600">
+      NextVision is a creative digital agency focused on innovation and results. Our team combines design, technology, and strategy to create exceptional digital experiences that grow your business.
+    </p>
+    <div class="grid md:grid-cols-3 gap-8 mt-12">
+      <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+        <h4 class="font-semibold text-xl mb-2 text-primary">10+ Years Experience</h4>
+        <p class="text-gray-600">Delivering quality solutions to businesses worldwide.</p>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+        <h4 class="font-semibold text-xl mb-2 text-primary">Creative Team</h4>
+        <p class="text-gray-600">We craft designs that communicate and inspire.</p>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+        <h4 class="font-semibold text-xl mb-2 text-primary">Global Clients</h4>
+        <p class="text-gray-600">Trusted by companies across 25+ countries.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-20 bg-gray-100 text-center">
+    <h3 class="text-3xl font-bold mb-6 text-primary">Our Services</h3>
+    <div class="grid md:grid-cols-3 gap-8 container mx-auto px-6">
+      <div class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition">
+        <h4 class="text-xl font-semibold mb-2 text-dark">Web Design</h4>
+        <p class="text-gray-600">Modern and responsive websites that engage users.</p>
+      </div>
+      <div class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition">
+        <h4 class="text-xl font-semibold mb-2 text-dark">Branding</h4>
+        <p class="text-gray-600">We help shape your identity and make it stand out.</p>
+      </div>
+      <div class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition">
+        <h4 class="text-xl font-semibold mb-2 text-dark">Digital Marketing</h4>
+        <p class="text-gray-600">Targeted campaigns to boost your online presence.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-20 container mx-auto px-6 text-center">
+    <h3 class="text-3xl font-bold mb-6 text-primary">What Clients Say</h3>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white p-8 rounded-xl shadow">
+        <p class="text-gray-600 italic mb-4">“They completely transformed our online presence. Sales increased by 45% in just 3 months!”</p>
+        <h4 class="font-semibold text-dark">— Sarah Johnson, CEO of CreativeTech</h4>
+      </div>
+      <div class="bg-white p-8 rounded-xl shadow">
+        <p class="text-gray-600 italic mb-4">“Excellent service and top-notch design quality. Highly recommended!”</p>
+        <h4 class="font-semibold text-dark">— Michael Lee, Founder of BrightMedia</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-gray-100 text-center">
+    <h3 class="text-3xl font-bold mb-6 text-primary">Contact Us</h3>
+    <p class="text-gray-600 mb-8">We’d love to hear from you! Fill out the form below and we’ll get in touch.</p>
+
+    <form class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-lg focus:outline-primary" required>
+      <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-lg focus:outline-primary" required>
+      <textarea placeholder="Your Message" rows="5" class="w-full p-3 border rounded-lg focus:outline-primary" required></textarea>
+      <button class="bg-primary text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition w-full">
+        Send Message
+      </button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-6">
+    <p>© 2025 NextVision Agency. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
