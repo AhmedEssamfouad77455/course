@@ -202,4 +202,58 @@ p2.textContent = "Paragraph 2";
 divContainer.append(p1, p2);
 document.body.appendChild(divContainer);
 
+console.log("---------------Traversing the DOM------------------");
+
+// Parent Element
+const title = document.getElementById("title");
+console.log(title.parentElement); // Get parent
+
+// Children Elements
+const body = document.body;
+// Element children returns only element nodes (ignores text nodes and comments)
+console.log(body.children); // HTMLCollection
+console.log(body.firstElementChild);
+console.log(body.lastElementChild);
+
+// Sibling Elements
+console.log(title.nextElementSibling);
+console.log(title.previousElementSibling);
+
+// Node Elements returns all nodes (including text nodes and comments)
+console.log(body.childNodes); // NodeList
+console.log(title.nextSibling);
+console.log(title.parentNode);
+
+console.log("---------------ClassList API------------------");
+title.className = "title main-title"; // set class attribute, overwrites existing classes
+
+titleElement.classList.add("highlight"); // adds the class highlight without removing existing classes
+console.log(titleElement.classList.contains("highlight")); // true
+
+titleElement.classList.add("highlight", "big-text"); // adds multiple classes
+
+titleElement.classList.remove("big-text"); // removes the class big-text
+titleElement.classList.remove("main-title", "large"); // removes multiple classes, if the class doesn't exist, it is ignored
+
+titleElement.classList.toggle("highlight"); // remove it if exists, add it if not
+
+const newClasses = ["bordered", "shadow"];
+titleElement.classList.add(...newClasses); // spread operator to add multiple classes from an array
+
+if (titleElement.classList.contains("highlight")) {
+  console.log("The element is highlighted!"); // returns true or false
+}
+
+titleElement.classList.replace("highlight", "accent"); // replace highlight class with accent, if highlight doesn't exist, nothing happens
+
+// ClassName vs ClassList
+// className returns the entire class attribute as a string
+// classList returns a DOMTokenList of individual classes
+// classList provides methods to manipulate classes easily
+// className overwrites the entire class attribute when set
+// classList allows adding/removing/toggling individual classes without affecting others
+// Use classList for better control over individual classes
+// ClassName is useful when you need to get or set the entire class attribute as a string
+// classlist prefers more flexibility for manipulating classes
+
 console.log("---------------End of Lecture Six------------------");
