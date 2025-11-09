@@ -107,6 +107,42 @@ obj11.fullName = "Lionel Messi"; // Setter
 
 console.log(obj11.fullName); // Getter
 
+console.log("---------------Nested Object---------------");
+let user = {
+  name: "Mohamed",
+  age: 38,
+  skills: ["HTML", "CSS", "JS"],
+  available: false,
+  addresses: {
+    ksa: "Riyadh",
+    egypt: {
+      one: "Cairo",
+      two: "Giza",
+    },
+  },
+
+  checkAv: function () {
+    if (user.available === true) {
+      return `Free For Work`;
+    } else {
+      return `Not Free`;
+    }
+  },
+};
+
+console.log(user.name);
+console.log(user.age);
+console.log(user.skills);
+console.log(user.skills.join(" | "));
+console.log(user.skills[2]); // Access With Index
+console.log(user.addresses.ksa);
+console.log(user.addresses.egypt.one);
+console.log(user["addresses"].egypt.two);
+console.log(user["addresses"]["egypt"]);
+console.log(user["addresses"]["egypt"]["one"]);
+
+console.log(user.checkAv());
+
 console.log("---------------Looping----------------");
 let obj12 = {
   name: "khaled",
@@ -129,6 +165,16 @@ let obj13 = {
 console.log(Object.keys(obj13));
 console.log(Object.values(obj13));
 console.log(Object.entries(obj13));
+
+console.log("---------------Object length----------------");
+const myObject = {
+  name: "Ali",
+  age: 30,
+  city: "New York",
+};
+
+const objectLength01 = Object.keys(myObject).length;
+console.log(objectLength01); // Output: 3
 
 console.log("---------------DOM------------------");
 // DOM = Document Object Model
