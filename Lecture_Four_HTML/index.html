@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>From</title>
+  </head>
+  <body>
+    <!-- 
+     a form use to collect user inputs 
+     the user inputs are then sent to a server for processing 
+     the form elements is a container for different types of elements
+    -->
+    <form></form>
+
+    <!-- Input -->
+    <form>
+      <!-- Input is inline element -->
+      <input />
+      <input />
+    </form>
+
+    <!-- Input types -->
+    <h2>Input Types</h2>
+
+    <form>
+      <input type="text" />
+      <input type="password" />
+    </form>
+
+    <!-- Label -->
+    <h2>Label</h2>
+
+    <form>
+      <div class="Username">
+        <label>Username</label>
+        <input type="text" />
+      </div>
+      <br />
+      <div class="Password">
+        <label>Password</label>
+        <input type="password" />
+      </div>
+      <br />
+      <input type="submit" />
+    </form>
+
+    <!-- Radio -->
+    <p>======================================</p>
+    <h2>Radio</h2>
+    <form>
+      <div>
+        <label>Full Name</label>
+        <input type="text" />
+      </div>
+      <br />
+
+      <div>
+        <label>HTML</label>
+        <input type="radio" name="langauge" value="HTML" />
+        <label>CSS</label>
+        <input type="radio" name="langauge" value="CSS" />
+        <label>JavaScript</label>
+        <input type="radio" name="langauge" value="JavaScript" />
+      </div>
+      <br />
+
+      <input type="submit" />
+    </form>
+
+    <!-- Connect label with input -->
+    <p>==================================</p>
+    <h2>Connect Label with input</h2>
+    <form>
+      <div>
+        <label>Full Name</label>
+        <input type="text" />
+      </div>
+      <br />
+
+      <div>
+        <label for="html">HTML</label>
+        <input type="radio" id="html" name="langauge" value="HTML" />
+        <label for="css">CSS</label>
+        <input type="radio" id="css" name="langauge" value="CSS" />
+        <label for="js">JavaScript</label>
+        <input type="radio" name="langauge" value="JavaScript" id="js" />
+      </div>
+      <br />
+
+      <input type="submit" />
+    </form>
+
+    <!-- Attr -->
+    <p>==========================================</p>
+    <h2>Attributes</h2>
+    <form>
+      <div>
+        <label for="username">Username</label>
+        <input type="text" id="username" required />
+      </div>
+      <br />
+      <div>
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" />
+      </div>
+      <br />
+      <div>
+        <label for="password"> Password </label>
+        <input
+          type="password"
+          id="password"
+          required
+          placeholder="Please write a complex password"
+        />
+      </div>
+      <br />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
